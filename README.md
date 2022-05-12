@@ -26,7 +26,7 @@ Na raiz do projeto execute o comando para subir o docker:
 ```bash
 $ sudo docker-compose up
 ```
-Este comando irá instalar as dependências e subirá o servidor automaticamente na porta 3000. Após subir será carregado os artigos da API publica para o BD. 
+Este comando irá instalar as dependências e subirá o servidor automaticamente na porta 3000. Após subir, será carregado os artigos da API publica para o BD. 
 
 *** Rotas
 <table>

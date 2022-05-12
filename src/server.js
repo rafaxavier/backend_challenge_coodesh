@@ -11,7 +11,7 @@ const HOST = '0.0.0.0';
 
 const app= express();
 
-mongoose.connect('mongodb+srv://cursoRocketSeat:rxn270109@meucluster.zzd96.mongodb.net/omnistack8?retryWrites=true&w=majority');
+mongoose.connect('**********************');
 
 
 // app.use(cors());

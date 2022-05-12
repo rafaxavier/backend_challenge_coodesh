@@ -23,14 +23,16 @@ module.exports = {
 
     // salva no Banco de Dados todos artigos recuperados da API
     async loadArticles(req, res){
+        const numRegistro = await Article.estimatedDocumentCount();
+        if(numRegistro  == 0){
+            const limit = 20000;
+            const response = await this.getArticles(limit);
 
-        const limit = 20000;
-        const response = await this.getArticles(limit);
-
-        response.data.forEach(i => {
-            articleController.store(req, res, i);
-        });
-            
+            response.data.forEach(i => {
+                articleController.store(req, res, i);
+            });
+        }
+        console.log(numRegistro);
     },
 
     // caso surja artigo novo na API ele será inserido no BD, Func disparado diariamente as 9:00

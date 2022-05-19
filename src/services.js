@@ -25,7 +25,7 @@ module.exports = {
     async loadArticles(req, res){
         const numRegistro = await Article.estimatedDocumentCount();
         if(numRegistro  == 0){
-            const limit = 20000;
+            const limit = 100;
             const response = await this.getArticles(limit);
 
             response.data.forEach(i => {

@@ -26,7 +26,12 @@ Na raiz do projeto execute o comando para subir o docker:
 ```bash
 $ sudo docker-compose up
 ```
-Este comando irá instalar as dependências e subirá o servidor automaticamente na porta 3000. Após subir, será carregado os artigos da API publica para o BD. 
+
+Execute o comando abaixo para rodar a aplicação na porta 3000. Após subir, será carregado os artigos da API publica para o BD. 
+
+```bash
+$ sudo docker run backend_challenge_coodesh_app 
+```
 
 *** Rotas
 <table>

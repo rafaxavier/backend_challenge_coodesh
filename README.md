@@ -33,6 +33,8 @@ Execute o comando abaixo para rodar a aplicação na porta 3000. Após subir, se
 $ sudo docker run backend_challenge_coodesh_app 
 ```
 
+# [ENDPOINTS](ENDPOINTS.md)
+
 Link da apresentação > https://www.loom.com/embed/6aadae4da68c463cb2e7f83bed592087
 
 Este é um desafio da <a href="https://coodesh.com/"> Coodesh </a>

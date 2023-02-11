@@ -42,3 +42,31 @@
     </tr>
 </table>
 
+
+
+# EndPoints
+ **Relatorio intrajornada**
+ http://127.0.0.1:5025/relatorio/intrajornada/filters?initialdate=2022-12-01&finaldate=2022-12-30&limit=100&page=1&setorfk=1&count=false
+
+```json
+"response": [
+	{
+		"nome": "FULANO DA SILVA",
+		"pis": "999.9999.999-9",
+		"data": "16-12-2022",
+		"duracaopausa": "00:56",
+		"transgredido": "-00:04"
+	},
+]
+```
+  http://127.0.0.1:5025/relatorio/intrajornada/filters?initialdate=2022-12-01&finaldate=2022-12-30&limit=100&page=1&setorfk=1&count=true
+
+```json
+"response": [
+	{
+		"totalViolacaoIntrajornada": 20
+	}
+]
+
+```
+
